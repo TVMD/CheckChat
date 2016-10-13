@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <com.app.atoms.widgets.RotateLoading
+        android:id="@+id/layout_loading_rotate"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:loading_width="2dp"
+        app:loading_color="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/layout_loading_tv_content"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loading..."
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="16dp"
+        android:layout_gravity="center_horizontal"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>

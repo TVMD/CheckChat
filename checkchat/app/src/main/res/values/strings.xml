@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ATOMS</string>
+    <string name="dialog_loading_text">Loading...</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="facebook_app_id">1755908664647249</string>
+    <string name="fb_login_protocol_scheme">fb1755908664647249</string>
+    <string name="title_activity_home_star">HomeStarActivity</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="colors_from">
+        <item>#dc474e</item>
+        <item>#f7872d</item>
+        <item>#4c86c6</item>
+        <item>#53b0b2</item>
+        <item>#ff5879</item>
+        <item>#4c4188</item>
+    </array>
+
+    <array name="colors_to">
+        <item>#f65d4c</item>
+        <item>#fbc452</item>
+        <item>#4da6db</item>
+        <item>#56e0c4</item>
+        <item>#ff5a64</item>
+        <item>#c15e87</item>
+    </array>
+</resources>

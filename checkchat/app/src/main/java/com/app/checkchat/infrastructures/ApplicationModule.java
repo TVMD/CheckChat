@@ -8,6 +8,9 @@ import com.app.checkchat.ApiUrls;
 import com.app.checkchat.services.authentication.AuthenticationService;
 import com.app.checkchat.services.authentication.AuthenticationServiceInterface;
 import com.app.checkchat.services.authentication.RestAuthenticationServiceInterface;
+import com.app.checkchat.services.demo.DemoService;
+import com.app.checkchat.services.demo.DemoServiceInterface;
+import com.app.checkchat.services.demo.RestDemoServiceInterface;
 import com.app.checkchat.utils.Constants;
 import com.beesightsoft.core.services.application.ApplicationService;
 import com.beesightsoft.core.services.application.ApplicationServiceConfiguration;
@@ -83,7 +86,12 @@ public class ApplicationModule {
         return new AuthenticationService(AuthenticationServiceConfiguration.init().useStorage(Constants.AUTH_UNIQUE_KEY), networkProvider, restService);
     }
 
-
+    @Provides
+    @Singleton
+    public DemoServiceInterface provideDemoService(NetworkProviderInterface networkProvider, AuthenticationServiceInterface  authenticationService) {
+        RestDemoServiceInterface restService = NetworkUtils.retrofitFor(ApiUrls.API_SERVER_ROOT_URL).create(RestDemoServiceInterface.class);
+        return new DemoService(networkProvider,restService, authenticationService);
+    }
 
 
 }

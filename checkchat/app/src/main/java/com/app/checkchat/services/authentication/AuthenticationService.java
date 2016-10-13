@@ -4,13 +4,10 @@ import com.app.checkchat.models.AuthenticationInfo;
 import com.app.checkchat.models.User;
 import com.app.checkchat.models.requests.LoginRequest;
 import com.app.checkchat.models.requests.LoginSocialRequest;
-import com.beesightsoft.core.exceptions.ApplicationException;
 import com.beesightsoft.core.services.authentication.AuthenticationServiceConfiguration;
 import com.beesightsoft.core.services.authentication.v0.BaseAuthenticationService;
 import com.beesightsoft.core.services.common.RestResponseMessage;
 import com.beesightsoft.core.services.network.NetworkProviderInterface;
-
-import java.util.List;
 
 import bolts.Task;
 import retrofit2.Call;

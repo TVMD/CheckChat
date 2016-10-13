@@ -38,8 +38,7 @@ public class NetworkUtils {
         builder.addInterceptor(new Interceptor() {
                                    @Override
                                    public Response intercept(Chain chain) throws IOException {
-                                       Request request = chain.request().newBuilder()
-                                               .addHeader("Accept", "application/vnd.app.atoms.mobile-v1+json").build();
+                                       Request request = chain.request().newBuilder().build();
 
                                        Response response = chain.proceed(request);
                                        int code = response.code();
